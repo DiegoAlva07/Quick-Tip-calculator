@@ -6,7 +6,9 @@ function currency(value){
 }
 
 function formatSplit(value){
+// Math ceil function is aded to round up the number to the highest number, this is usefull when working with money. otherwise the totals of the calculator will be off by some number every now and then 
     
+    value= Math.ceil(value*100)/100;
     if (value === 1) return `${value} person`;
     return `${value} people`
     
@@ -29,7 +31,7 @@ function update() {
  document.getElementById("totalWithTip").innerHTML =currency(bill + tipValue);
  document.getElementById("splitValue").innerHTML = formatSplit(split);
  document.getElementById("billEach").innerHTML = currency(billEach);
- document.getElementById("tipEach").innerHTML = currency();   
+ document.getElementById("tipEach").innerHTML = currency(tipEach);   
     
     
     
