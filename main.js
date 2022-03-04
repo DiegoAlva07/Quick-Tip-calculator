@@ -45,7 +45,6 @@ container.addEventListener("input", update);
 
 
 
-
 // We couldve add the function to the main tag to call, the event on in put for al lthe element insde the main tag. but its better practice to add and ID to the main tag, on this example container id and on the java script, create a variable and adding and event listener calling up the function.
 // with event listeners you use a dot notatation and inside parenthesis you add  2 values: ej
 
