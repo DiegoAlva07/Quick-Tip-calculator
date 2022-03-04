@@ -17,9 +17,9 @@ function formatSplit(value){
 
 function update() {
  
-  let bill = parseInt(document.getElementById("yourBill").value);
-  let tip = parseInt(document.getElementById("tipInput").value);
-  let split = parseInt(document.getElementById("splitInput").value);
+  let bill = Number(document.getElementById("yourBill").value);
+  let tip = Number(document.getElementById("tipInput").value);
+  let split = Number(document.getElementById("splitInput").value);
   
   let tipValue = bill * (tip / 100);
   let tipEach = tipValue / split;
